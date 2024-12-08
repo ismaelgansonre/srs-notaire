@@ -136,7 +136,7 @@ export default function Home() {
                   href="tel:+15145539043"
                 >
                   <FaPhoneAlt />
-                  +758 5512 652
+                  +15145539043
                 </Link>
               </li>
             </ul>
@@ -374,151 +374,130 @@ export default function Home() {
 
         {/* Faq Section */}
         <section id="faq" className="faq">
-          <div className="container pt-120 pb-120">
-            <div className="top-content ">
-              <FadeIn>
-                <h4 className="primary mb-2">FAQ</h4>
-                <h2 className="mb-2">Asked Questions</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Viverra rhoncus, sed a fames sit ut morbi amet.
-                </p>
-              </FadeIn>
-            </div>
-            <div className="row d-flex align-items-center justify-content-lg-between gap-3 gap-lg-0">
-              <div className="col-lg-6 left ">
-                <img className="img-fluid" src="/img/faq.png" alt="" />
+  <div className="container pt-120 pb-120">
+    <div className="top-content">
+      <FadeIn>
+        <h4 className="primary mb-2">FAQ</h4>
+        <h2 className="mb-2">Questions Fréquentes</h2>
+        <p>
+          Retrouvez ici les réponses aux questions les plus fréquentes concernant nos services notariaux.
+        </p>
+      </FadeIn>
+    </div>
+    <div className="row d-flex align-items-center justify-content-lg-between gap-3 gap-lg-0">
+      <div className="col-lg-6 left">
+        <img className="img-fluid" src="/img/faq.png" alt="FAQ" />
+      </div>
+      <div className="col-lg-5">
+        <FadeIn>
+          <div className="accordion" id="faqAccordion">
+            <div className="accordion-item">
+              <button
+                className="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="false"
+              >
+                Quelles sont les missions principales d’un notaire ?
+              </button>
+              <div
+                id="collapseOne"
+                className="accordion-collapse collapse show"
+                data-bs-parent="#faqAccordion"
+              >
+                <div className="accordion-body">
+                  Un notaire est chargé d’authentifier les actes juridiques, de conseiller sur des questions juridiques et fiscales, et d’accompagner dans des démarches telles que les ventes immobilières, les successions, ou la création d’entreprises.
+                </div>
               </div>
-              <div className="col-lg-5 ">
-                <FadeIn>
-                  <div className="accordion" id="faqAccordion">
-                    <div className="accordion-item">
-                      <button
-                        className="accordion-button"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne"
-                        aria-expanded="false"
-                      >
-                        What do we do?
-                      </button>
-                      <div
-                        id="collapseOne"
-                        className="accordion-collapse collapse show"
-                        data-bs-parent="#faqAccordion"
-                      >
-                        <div className="accordion-body">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Et donec integer nulla quis arcu, aliquam
-                          vivamus tincidunt. Vulputate non, aliquet aliquet non
-                          sed. Cursus sed sed in proin tortor in. Id mi id
-                          mattis arcu non, ut.
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo"
-                        aria-expanded="true"
-                      >
-                        How do we do it?
-                      </button>
-                      <div
-                        id="collapseTwo"
-                        className="accordion-collapse collapse"
-                        data-bs-parent="#faqAccordion"
-                      >
-                        <div className="accordion-body">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Et donec integer nulla quis arcu, aliquam
-                          vivamus tincidunt. Vulputate non, aliquet aliquet non
-                          sed. Cursus sed sed in proin tortor in. Id mi id
-                          mattis arcu non, ut.
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree"
-                        aria-expanded="true"
-                      >
-                        What's our expertise?
-                      </button>
-                      <div
-                        id="collapseThree"
-                        className="accordion-collapse collapse "
-                        data-bs-parent="#faqAccordion"
-                      >
-                        <div className="accordion-body">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Et donec integer nulla quis arcu, aliquam
-                          vivamus tincidunt. Vulputate non, aliquet aliquet non
-                          sed. Cursus sed sed in proin tortor in. Id mi id
-                          mattis arcu non, ut.
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseFour"
-                        aria-expanded="true"
-                        aria-controls="collapseOne"
-                      >
-                        When do we work?
-                      </button>
-                      <div
-                        id="collapseFour"
-                        className="accordion-collapse collapse "
-                        data-bs-parent="#faqAccordion"
-                      >
-                        <div className="accordion-body">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Et donec integer nulla quis arcu, aliquam
-                          vivamus tincidunt. Vulputate non, aliquet aliquet non
-                          sed. Cursus sed sed in proin tortor in. Id mi id
-                          mattis arcu non, ut.
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseFive"
-                        aria-expanded="true"
-                      >
-                        How competent are our staff?
-                      </button>
-                      <div
-                        id="collapseFive"
-                        className="accordion-collapse collapse "
-                        data-bs-parent="#faqAccordion"
-                      >
-                        <div className="accordion-body">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Et donec integer nulla quis arcu, aliquam
-                          vivamus tincidunt. Vulputate non, aliquet aliquet non
-                          sed. Cursus sed sed in proin tortor in. Id mi id
-                          mattis arcu non, ut.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </FadeIn>
+            </div>
+            <div className="accordion-item">
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="true"
+              >
+                Quels documents dois-je fournir pour un acte notarié ?
+              </button>
+              <div
+                id="collapseTwo"
+                className="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div className="accordion-body">
+                  Cela dépend du type d’acte. Par exemple, pour une vente immobilière, vous aurez besoin du titre de propriété, des diagnostics immobiliers, et de l’identité des parties concernées.
+                </div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="true"
+              >
+                Combien de temps faut-il pour finaliser une transaction immobilière ?
+              </button>
+              <div
+                id="collapseThree"
+                className="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div className="accordion-body">
+                  En général, une transaction immobilière prend environ 2 à 3 mois, mais cela peut varier selon la complexité du dossier.
+                </div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="true"
+              >
+                Quel est le coût des services notariés ?
+              </button>
+              <div
+                id="collapseFour"
+                className="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div className="accordion-body">
+                  Les frais de notaire incluent les droits de mutation (taxes), les débours (frais annexes), et la rémunération du notaire. Ils varient en fonction de la nature de l’acte et de sa valeur.
+                </div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="true"
+              >
+                Est-il obligatoire de passer par un notaire pour une donation ou un testament ?
+              </button>
+              <div
+                id="collapseFive"
+                className="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div className="accordion-body">
+                  Oui, pour garantir la validité juridique et éviter les litiges, il est recommandé de faire appel à un notaire.
+                </div>
               </div>
             </div>
           </div>
-        </section>
+        </FadeIn>
+      </div>
+    </div>
+  </div>
+</section>
+
       </main>
 
       <footer className="footer pt-120">
