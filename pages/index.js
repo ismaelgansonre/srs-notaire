@@ -569,7 +569,7 @@ export default function Home() {
                      width="165"
                 />
                 <p className="text-white mt-3">
-                  Aliquam erat volutpat. at name Phasellusalfm sit amet pulvinar
+                Membre de NotaireLocal.com, regroupement de notaires à Québec
                   mi.{" "}
                 </p>
               </div>
@@ -591,29 +591,7 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <div className="col-md-6 col-lg-3">
-                <h5 className="text-white mt-5 mt-lg-0">Policy</h5>
-                <ul className="d-flex flex-column gap-2 pt-2">
-                  <li>
-                    <a href="#">Privacy Policy</a>
-                  </li>
-                  <li>
-                    <a href="#">Terms of Service</a>
-                  </li>
-                  <li>
-                    <a href="#">Code of Conduct</a>
-                  </li>
-                  <li>
-                    <a href="#">Cancellation</a>
-                  </li>
-                  <li>
-                    <a href="#">Referral Policy</a>
-                  </li>
-                  <li>
-                    <a href="#">Consulting</a>
-                  </li>
-                </ul>
-              </div>
+
               <div className="col-md-6 col-lg-3">
                 <h5 className="text-white mt-5 mt-lg-0">Contact</h5>
                 <ul className="address d-flex flex-column gap-3">
