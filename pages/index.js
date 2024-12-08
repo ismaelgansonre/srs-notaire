@@ -302,14 +302,6 @@ export default function Home() {
               <FadeIn>
                 <h4 className="primary mb-3">Services</h4>
                 <h2 className="mb-1">Services juridiques offerts</h2>
-                <p>
-                {services.map(({ id, title }) => (
-                  <div key={id} className="box ">
-                    <img src={icon} alt="" />
-                    <h4 className="mb-1">{title}</h4>
-                  </div>
-                ))}
-                </p>
               </FadeIn>
             </div>
             <FadeIn>
@@ -331,100 +323,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        {/* Portfolio Section */}
-        <section id="portfolio" className="portfolio pt-120 pb-120">
-          <div className="container-fluid">
-            <div className="row d-flex align-items-center">
-              <div className="col-lg-2 px-0"></div>
-              <div className="col-lg-12 col-xl-3 px-xl-0 pt-4 ">
-                <FadeIn>
-                  <h4 className="primary mb-2">Portfolio</h4>
-                  <h2 className="mb-0">Case Studies Of Portfolio</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Viverra rhoncus, sed a fames sit ut morbi amet.
-                  </p>
-                </FadeIn>
-              </div>
-              <div className="col-lg-12 col-xl-7">
-                <div className="d-flex justify-content-center gap-3 mb-5">
-                  <button className="button-prev">
-                    <FaArrowLeft />
-                  </button>
-                  <button className="button-next">
-                    <FaArrowRight />
-                  </button>
-                </div>
 
-                <FadeIn>
-                  <Swiper
-                    navigation={{
-                      nextEl: ".button-next",
-                      prevEl: ".button-prev",
-                    }}
-                    modules={[Navigation, Autoplay]}
-                    loop={true}
-                    slidesPerView="auto"
-                    autoplay={true}
-                    breakpoints={{
-                      320: {
-                        slidesPerView: 1,
-                        spaceBetween: 20,
-                      },
-                      640: {
-                        slidesPerView: 1.6,
-                        spaceBetween: 20,
-                      },
-                      768: {
-                        slidesPerView: 2,
-                        spaceBetween: 24,
-                      },
-                      1024: {
-                        slidesPerView: 2,
-                        spaceBetween: 24,
-                      },
-                      1300: {
-                        slidesPerView: 2.4,
-                        spaceBetween: 24,
-                      },
-                    }}
-                  >
-                    <SwiperSlide>
-                      <img src="/img/portfolio1.png" alt="portfolio img" />
-                      <div className="overlay over1">
-                        <h6 className="text-white">Law & Business</h6>
-                        <p className="text-white">
-                          Law & Business Donec semper ultrices elementum.{" "}
-                        </p>
-                        <FaEye className="text-white fs-2" />
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src="/img/portfolio2.png" alt="portfolio img" />
-                      <div className="overlay over1">
-                        <h6 className="text-white">Law & Business</h6>
-                        <p className="text-white">
-                          Law & Business Donec semper ultrices elementum.{" "}
-                        </p>
-                        <FaEye className="text-white fs-2" />
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src="/img/portfolio1.png" alt="portfolio img" />
-                      <div className="overlay over1">
-                        <h6 className="text-white">Law & Business</h6>
-                        <p className="text-white">
-                          Law & Business Donec semper ultrices elementum.{" "}
-                        </p>
-                        <FaEye className="text-white fs-2" />
-                      </div>
-                    </SwiperSlide>
-                  </Swiper>
-                </FadeIn>
-              </div>
-            </div>
-          </div>
-        </section>
         {/* Logo Slider Section */}
         <div className="logoSlider-section">
           <FadeIn>
