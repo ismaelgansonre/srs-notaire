@@ -133,7 +133,7 @@ export default function Home() {
                 <Link
                   onClick={hideMenu}
                   className="nav-link nav-phone text-white d-flex gap-1 align-items-center"
-                  href="tel:+7585512652"
+                  href="tel:+15145539043"
                 >
                   <FaPhoneAlt />
                   +758 5512 652
@@ -739,14 +739,15 @@ export default function Home() {
                     {" "}
                     <a href="mailto:landion@example.com">
                       <FaEnvelope className="fs-4" />
-                      landion@example.com
+                      ssawadogo@notarius.net
                     </a>{" "}
                   </li>
                   <li>
                     {" "}
                     <a href="https://srs-notaire.com/">
                       <FaGlobe className="fs-4" />
-                      landio.do
+                      1111 Bd Dr.-Frederik-Philips
+                      Saint-Laurent,Quebec H4M 2X6
                     </a>{" "}
                   </li>
                   <li className="text-white d-flex align-content-center gap-3">
@@ -756,11 +757,11 @@ export default function Home() {
                       src="/img/location.png"
                       alt=""
                     />
-                    <span> Dr. San Jose, Montreal</span>
+                    <span> SARAH SAWADOGO</span>
                   </li>
                   <li>
-                    <a href="tel:2195550114">
-                      <FaMobileAlt className="fs-4" /> (219) 555-0114
+                    <a href="tel:+15145539043">
+                      <FaMobileAlt className="fs-4" /> (514) 553-9043
                     </a>
                   </li>
                 </ul>
