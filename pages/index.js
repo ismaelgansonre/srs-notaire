@@ -301,10 +301,14 @@ export default function Home() {
             <div className="top-content ">
               <FadeIn>
                 <h4 className="primary mb-3">Services</h4>
-                <h2 className="mb-1">Service We Provide</h2>
+                <h2 className="mb-1">Services juridiques offerts</h2>
                 <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Viverra rhoncus, sed a fames sit ut morbi amet.
+                {services.map(({ id, title }) => (
+                  <div key={id} className="box ">
+                    <img src={icon} alt="" />
+                    <h4 className="mb-1">{title}</h4>
+                  </div>
+                ))}
                 </p>
               </FadeIn>
             </div>
