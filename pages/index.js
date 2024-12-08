@@ -746,8 +746,7 @@ export default function Home() {
                     {" "}
                     <a href="https://srs-notaire.com/">
                       <FaGlobe className="fs-4" />
-                      1111 Bd Dr.-Frederik-Philips
-                      Saint-Laurent,Quebec H4M 2X6
+                      Sarah SAWADOGO
                     </a>{" "}
                   </li>
                   <li className="text-white d-flex align-content-center gap-3">
@@ -757,7 +756,8 @@ export default function Home() {
                       src="/img/location.png"
                       alt=""
                     />
-                    <span> SARAH SAWADOGO</span>
+                    <span> 1111 Bd Dr.-Frederik-Philips
+                    Saint-Laurent,Quebec H4M 2X6</span>
                   </li>
                   <li>
                     <a href="tel:+15145539043">
