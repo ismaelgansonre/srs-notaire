@@ -133,10 +133,10 @@ export default function Home() {
                 <Link
                   onClick={hideMenu}
                   className="nav-link nav-phone text-white d-flex gap-1 align-items-center"
-                  href="tel:+7585512652"
+                  href="tel:+15145539043"
                 >
                   <FaPhoneAlt />
-                  +758 5512 652
+                  +15145539043
                 </Link>
               </li>
             </ul>
@@ -301,11 +301,7 @@ export default function Home() {
             <div className="top-content ">
               <FadeIn>
                 <h4 className="primary mb-3">Services</h4>
-                <h2 className="mb-1">Service We Provide</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Viverra rhoncus, sed a fames sit ut morbi amet.
-                </p>
+                <h2 className="mb-1">Services juridiques offerts</h2>
               </FadeIn>
             </div>
             <FadeIn>
@@ -327,100 +323,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        {/* Portfolio Section */}
-        <section id="portfolio" className="portfolio pt-120 pb-120">
-          <div className="container-fluid">
-            <div className="row d-flex align-items-center">
-              <div className="col-lg-2 px-0"></div>
-              <div className="col-lg-12 col-xl-3 px-xl-0 pt-4 ">
-                <FadeIn>
-                  <h4 className="primary mb-2">Portfolio</h4>
-                  <h2 className="mb-0">Case Studies Of Portfolio</h2>
-                  <p>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Viverra rhoncus, sed a fames sit ut morbi amet.
-                  </p>
-                </FadeIn>
-              </div>
-              <div className="col-lg-12 col-xl-7">
-                <div className="d-flex justify-content-center gap-3 mb-5">
-                  <button className="button-prev">
-                    <FaArrowLeft />
-                  </button>
-                  <button className="button-next">
-                    <FaArrowRight />
-                  </button>
-                </div>
 
-                <FadeIn>
-                  <Swiper
-                    navigation={{
-                      nextEl: ".button-next",
-                      prevEl: ".button-prev",
-                    }}
-                    modules={[Navigation, Autoplay]}
-                    loop={true}
-                    slidesPerView="auto"
-                    autoplay={true}
-                    breakpoints={{
-                      320: {
-                        slidesPerView: 1,
-                        spaceBetween: 20,
-                      },
-                      640: {
-                        slidesPerView: 1.6,
-                        spaceBetween: 20,
-                      },
-                      768: {
-                        slidesPerView: 2,
-                        spaceBetween: 24,
-                      },
-                      1024: {
-                        slidesPerView: 2,
-                        spaceBetween: 24,
-                      },
-                      1300: {
-                        slidesPerView: 2.4,
-                        spaceBetween: 24,
-                      },
-                    }}
-                  >
-                    <SwiperSlide>
-                      <img src="/img/portfolio1.png" alt="portfolio img" />
-                      <div className="overlay over1">
-                        <h6 className="text-white">Law & Business</h6>
-                        <p className="text-white">
-                          Law & Business Donec semper ultrices elementum.{" "}
-                        </p>
-                        <FaEye className="text-white fs-2" />
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src="/img/portfolio2.png" alt="portfolio img" />
-                      <div className="overlay over1">
-                        <h6 className="text-white">Law & Business</h6>
-                        <p className="text-white">
-                          Law & Business Donec semper ultrices elementum.{" "}
-                        </p>
-                        <FaEye className="text-white fs-2" />
-                      </div>
-                    </SwiperSlide>
-                    <SwiperSlide>
-                      <img src="/img/portfolio1.png" alt="portfolio img" />
-                      <div className="overlay over1">
-                        <h6 className="text-white">Law & Business</h6>
-                        <p className="text-white">
-                          Law & Business Donec semper ultrices elementum.{" "}
-                        </p>
-                        <FaEye className="text-white fs-2" />
-                      </div>
-                    </SwiperSlide>
-                  </Swiper>
-                </FadeIn>
-              </div>
-            </div>
-          </div>
-        </section>
         {/* Logo Slider Section */}
         <div className="logoSlider-section">
           <FadeIn>
@@ -471,151 +374,130 @@ export default function Home() {
 
         {/* Faq Section */}
         <section id="faq" className="faq">
-          <div className="container pt-120 pb-120">
-            <div className="top-content ">
-              <FadeIn>
-                <h4 className="primary mb-2">FAQ</h4>
-                <h2 className="mb-2">Asked Questions</h2>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                  Viverra rhoncus, sed a fames sit ut morbi amet.
-                </p>
-              </FadeIn>
-            </div>
-            <div className="row d-flex align-items-center justify-content-lg-between gap-3 gap-lg-0">
-              <div className="col-lg-6 left ">
-                <img className="img-fluid" src="/img/faq.png" alt="" />
+  <div className="container pt-120 pb-120">
+    <div className="top-content">
+      <FadeIn>
+        <h4 className="primary mb-2">FAQ</h4>
+        <h2 className="mb-2">Questions Fréquentes</h2>
+        <p>
+          Retrouvez ici les réponses aux questions les plus fréquentes concernant nos services notariaux.
+        </p>
+      </FadeIn>
+    </div>
+    <div className="row d-flex align-items-center justify-content-lg-between gap-3 gap-lg-0">
+      <div className="col-lg-6 left">
+        <img className="img-fluid" src="/img/faq.png" alt="FAQ" />
+      </div>
+      <div className="col-lg-5">
+        <FadeIn>
+          <div className="accordion" id="faqAccordion">
+            <div className="accordion-item">
+              <button
+                className="accordion-button"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseOne"
+                aria-expanded="false"
+              >
+                Quelles sont les missions principales d’un notaire ?
+              </button>
+              <div
+                id="collapseOne"
+                className="accordion-collapse collapse show"
+                data-bs-parent="#faqAccordion"
+              >
+                <div className="accordion-body">
+                  Un notaire est chargé d’authentifier les actes juridiques, de conseiller sur des questions juridiques et fiscales, et d’accompagner dans des démarches telles que les ventes immobilières, les successions, ou la création d’entreprises.
+                </div>
               </div>
-              <div className="col-lg-5 ">
-                <FadeIn>
-                  <div className="accordion" id="faqAccordion">
-                    <div className="accordion-item">
-                      <button
-                        className="accordion-button"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne"
-                        aria-expanded="false"
-                      >
-                        What do we do?
-                      </button>
-                      <div
-                        id="collapseOne"
-                        className="accordion-collapse collapse show"
-                        data-bs-parent="#faqAccordion"
-                      >
-                        <div className="accordion-body">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Et donec integer nulla quis arcu, aliquam
-                          vivamus tincidunt. Vulputate non, aliquet aliquet non
-                          sed. Cursus sed sed in proin tortor in. Id mi id
-                          mattis arcu non, ut.
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo"
-                        aria-expanded="true"
-                      >
-                        How do we do it?
-                      </button>
-                      <div
-                        id="collapseTwo"
-                        className="accordion-collapse collapse"
-                        data-bs-parent="#faqAccordion"
-                      >
-                        <div className="accordion-body">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Et donec integer nulla quis arcu, aliquam
-                          vivamus tincidunt. Vulputate non, aliquet aliquet non
-                          sed. Cursus sed sed in proin tortor in. Id mi id
-                          mattis arcu non, ut.
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree"
-                        aria-expanded="true"
-                      >
-                        What's our expertise?
-                      </button>
-                      <div
-                        id="collapseThree"
-                        className="accordion-collapse collapse "
-                        data-bs-parent="#faqAccordion"
-                      >
-                        <div className="accordion-body">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Et donec integer nulla quis arcu, aliquam
-                          vivamus tincidunt. Vulputate non, aliquet aliquet non
-                          sed. Cursus sed sed in proin tortor in. Id mi id
-                          mattis arcu non, ut.
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseFour"
-                        aria-expanded="true"
-                        aria-controls="collapseOne"
-                      >
-                        When do we work?
-                      </button>
-                      <div
-                        id="collapseFour"
-                        className="accordion-collapse collapse "
-                        data-bs-parent="#faqAccordion"
-                      >
-                        <div className="accordion-body">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Et donec integer nulla quis arcu, aliquam
-                          vivamus tincidunt. Vulputate non, aliquet aliquet non
-                          sed. Cursus sed sed in proin tortor in. Id mi id
-                          mattis arcu non, ut.
-                        </div>
-                      </div>
-                    </div>
-                    <div className="accordion-item">
-                      <button
-                        className="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseFive"
-                        aria-expanded="true"
-                      >
-                        How competent are our staff?
-                      </button>
-                      <div
-                        id="collapseFive"
-                        className="accordion-collapse collapse "
-                        data-bs-parent="#faqAccordion"
-                      >
-                        <div className="accordion-body">
-                          Lorem ipsum dolor sit amet, consectetur adipiscing
-                          elit. Et donec integer nulla quis arcu, aliquam
-                          vivamus tincidunt. Vulputate non, aliquet aliquet non
-                          sed. Cursus sed sed in proin tortor in. Id mi id
-                          mattis arcu non, ut.
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </FadeIn>
+            </div>
+            <div className="accordion-item">
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo"
+                aria-expanded="true"
+              >
+                Quels documents dois-je fournir pour un acte notarié ?
+              </button>
+              <div
+                id="collapseTwo"
+                className="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div className="accordion-body">
+                  Cela dépend du type d’acte. Par exemple, pour une vente immobilière, vous aurez besoin du titre de propriété, des diagnostics immobiliers, et de l’identité des parties concernées.
+                </div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseThree"
+                aria-expanded="true"
+              >
+                Combien de temps faut-il pour finaliser une transaction immobilière ?
+              </button>
+              <div
+                id="collapseThree"
+                className="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div className="accordion-body">
+                  En général, une transaction immobilière prend environ 2 à 3 mois, mais cela peut varier selon la complexité du dossier.
+                </div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFour"
+                aria-expanded="true"
+              >
+                Quel est le coût des services notariés ?
+              </button>
+              <div
+                id="collapseFour"
+                className="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div className="accordion-body">
+                  Les frais de notaire incluent les droits de mutation (taxes), les débours (frais annexes), et la rémunération du notaire. Ils varient en fonction de la nature de l’acte et de sa valeur.
+                </div>
+              </div>
+            </div>
+            <div className="accordion-item">
+              <button
+                className="accordion-button collapsed"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapseFive"
+                aria-expanded="true"
+              >
+                Est-il obligatoire de passer par un notaire pour une donation ou un testament ?
+              </button>
+              <div
+                id="collapseFive"
+                className="accordion-collapse collapse"
+                data-bs-parent="#faqAccordion"
+              >
+                <div className="accordion-body">
+                  Oui, pour garantir la validité juridique et éviter les litiges, il est recommandé de faire appel à un notaire.
+                </div>
               </div>
             </div>
           </div>
-        </section>
+        </FadeIn>
+      </div>
+    </div>
+  </div>
+</section>
+
       </main>
 
       <footer className="footer pt-120">
@@ -687,7 +569,7 @@ export default function Home() {
                      width="165"
                 />
                 <p className="text-white mt-3">
-                  Aliquam erat volutpat. at name Phasellusalfm sit amet pulvinar
+                Membre de NotaireLocal.com, regroupement de notaires à Québec
                   mi.{" "}
                 </p>
               </div>
@@ -709,29 +591,7 @@ export default function Home() {
                   </li>
                 </ul>
               </div>
-              <div className="col-md-6 col-lg-3">
-                <h5 className="text-white mt-5 mt-lg-0">Policy</h5>
-                <ul className="d-flex flex-column gap-2 pt-2">
-                  <li>
-                    <a href="#">Privacy Policy</a>
-                  </li>
-                  <li>
-                    <a href="#">Terms of Service</a>
-                  </li>
-                  <li>
-                    <a href="#">Code of Conduct</a>
-                  </li>
-                  <li>
-                    <a href="#">Cancellation</a>
-                  </li>
-                  <li>
-                    <a href="#">Referral Policy</a>
-                  </li>
-                  <li>
-                    <a href="#">Consulting</a>
-                  </li>
-                </ul>
-              </div>
+
               <div className="col-md-6 col-lg-3">
                 <h5 className="text-white mt-5 mt-lg-0">Contact</h5>
                 <ul className="address d-flex flex-column gap-3">
@@ -739,14 +599,14 @@ export default function Home() {
                     {" "}
                     <a href="mailto:landion@example.com">
                       <FaEnvelope className="fs-4" />
-                      landion@example.com
+                      ssawadogo@notarius.net
                     </a>{" "}
                   </li>
                   <li>
                     {" "}
                     <a href="https://srs-notaire.com/">
                       <FaGlobe className="fs-4" />
-                      landio.do
+                      Sarah SAWADOGO
                     </a>{" "}
                   </li>
                   <li className="text-white d-flex align-content-center gap-3">
@@ -756,11 +616,12 @@ export default function Home() {
                       src="/img/location.png"
                       alt=""
                     />
-                    <span> Dr. San Jose, Montreal</span>
+                    <span> 1111 Bd Dr.-Frederik-Philips
+                    Saint-Laurent,Quebec H4M 2X6</span>
                   </li>
                   <li>
-                    <a href="tel:2195550114">
-                      <FaMobileAlt className="fs-4" /> (219) 555-0114
+                    <a href="tel:+15145539043">
+                      <FaMobileAlt className="fs-4" /> (514) 553-9043
                     </a>
                   </li>
                 </ul>
