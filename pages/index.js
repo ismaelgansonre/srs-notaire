@@ -166,18 +166,6 @@ export default function Home() {
                   <button className="outline-btn">Planifiez Votre Consultation</button>
                 </FadeIn>
               </div>
-              <div className="col-lg-6">
-                <div className="circle d-none d-lg-block">
-                  <img                   
-                    src="/img/banner-btn.png"
-                    alt="btn"
-                    onClick={()=> setOpen(true)}
-                  />
-                </div>
-              </div>
-              
-
-              <ModalVideo channel='youtube' autoplay isOpen={isOpen} videoId="x_IF0wHtGJE" onClose={() => setOpen(false)} />
 
             </div>
           </div>
@@ -190,69 +178,7 @@ export default function Home() {
                 id="section_counter"
                 className="counter-content d-flex  justify-content-between flex-wrap gap-3 gap-md-4 gap-xxl-5 "
               >
-                <div className="box d-flex align-items-center gap-3">
-                  <img src="/img/icon1.png" alt="icon" />
-                  <div className="counter-item">
-                    <h4>
-                      <span className="counter" data-target="1800">
-                        <CountUp end={1800} redraw={false}>
-                          {({ countUpRef, start }) => (
-                            <VisibilitySensor onChange={start} delayedCall>
-                              <span ref={countUpRef} />
-                            </VisibilitySensor>
-                          )}
-                        </CountUp>
-                      </span>
-                      <span>+</span>
-                    </h4>
-                    <h5>Project</h5>
-                  </div>
-                </div>
-                <div className="box d-flex align-items-center gap-3">
-                  <img src="/img/icon2.png" alt="icon" />
-                  <div className="counter-item">
-                    <h4>
-                      <CountUp end={2100} redraw={false}>
-                        {({ countUpRef, start }) => (
-                          <VisibilitySensor onChange={start} delayedCall>
-                            <span ref={countUpRef} />
-                          </VisibilitySensor>
-                        )}
-                      </CountUp>
-                    </h4>
-                    <h5>Customer</h5>
-                  </div>
-                </div>
-                <div className="box d-flex align-items-center gap-3">
-                  <img src="/img/icon3.png" alt="icon" />
-                  <div className="counter-item">
-                    <h4 className="counter">
-                      <CountUp end={190} redraw={false}>
-                        {({ countUpRef, start }) => (
-                          <VisibilitySensor onChange={start} delayedCall>
-                            <span ref={countUpRef} />
-                          </VisibilitySensor>
-                        )}
-                      </CountUp>
-                    </h4>
-                    <h5>Expert Team</h5>
-                  </div>
-                </div>
-                <div className="box d-flex align-items-center gap-3">
-                  <img src="/img/icon4.png" alt="icon" />
-                  <div className="counter-item">
-                    <h4 className="counter">
-                      <CountUp end={40} redraw={false}>
-                        {({ countUpRef, start }) => (
-                          <VisibilitySensor onChange={start} delayedCall>
-                            <span ref={countUpRef} />
-                          </VisibilitySensor>
-                        )}
-                      </CountUp>
-                    </h4>
-                    <h5>Awards</h5>
-                  </div>
-                </div>
+
               </div>
             </FadeIn>
             <div className="row d-flex align-items-center gap-5 gap-lg-0">
@@ -275,18 +201,18 @@ export default function Home() {
                         <h5 className="text-white mb-0">Mission</h5>
                       </div>
                       <p className="text-white mb-0">
-                        Integer felis odio, imperdiet id risus eu, posuere
-                        iaculis eros.{" "}
+                        Fournir des services notariaux fiables et accessibles,
+                        en offrant un accompagnement personnalisé pour toutes vos démarches
+                        juridiques et administratives.
                       </p>
                     </div>
                     <div className="about-box2">
                       <div className="top d-flex align-items-center gap-2 mb-2">
                         <img src="/img/globe.png" alt="plane icon" />
-                        <h5 className="text-white mb-0">Vission</h5>
+                        <h5 className="text-white mb-0">Vision</h5>
                       </div>
                       <p className="text-white mb-0">
-                        Integer felis odio, imperdiet id risus eu, posuere
-                        iaculis eros.{" "}
+                        Devenir le partenaire de confiance pour tous vos besoins notariaux, en mettant l'accent sur l'excellence, l'intégrité et l'innovation.
                       </p>
                     </div>
                   </div>
@@ -312,15 +238,13 @@ export default function Home() {
                     <h4 className="mb-1">{title}</h4>
                     <p className="pb-2">{desc} </p>
                     <a href="#" className="d-flex align-items-center gap-2">
-                      Learn More <HiArrowNarrowRight />
+
                     </a>
                   </div>
                 ))}
               </div>
             </FadeIn>
-            <div className="btn-container">
-              <button className="primary-btn">See All</button>
-            </div>
+
           </div>
         </section>
 
