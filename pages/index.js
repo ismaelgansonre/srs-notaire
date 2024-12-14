@@ -386,7 +386,7 @@ export default function Home() {
     </div>
     <div className="row d-flex align-items-center justify-content-lg-between gap-3 gap-lg-0">
       <div className="col-lg-6 left">
-        <img className="img-fluid" src="/img/faq.png" alt="FAQ" />
+        <img className="img-fluid" src="/img/faq_.png" alt="FAQ" />
       </div>
       <div className="col-lg-5">
         <FadeIn>
