@@ -205,7 +205,14 @@ export default function Home() {
                     <span className="primary">.</span>
                   </h1>
                   <p>Un accompagnement professionnel pour toutes vos démarches notariales</p>
-                  <button className="outline-btn">Planifiez Votre Consultation</button>
+                  <button
+                      className="outline-btn"
+                      onClick={() => {
+                        document.querySelector("#consultation").scrollIntoView({behavior: "smooth"});
+                      }}
+                  >
+                    Planifiez Votre Consultation
+                  </button>
                 </FadeIn>
               </div>
 
@@ -468,7 +475,7 @@ export default function Home() {
 
       <footer className="footer pt-120">
         <div className="container">
-          <div className="consultation-form">
+          <div id="consultation" className="consultation-form">
             <div className="row d-flex align-items-center">
               <div className="col-lg-6">
                 <FadeIn>
@@ -584,7 +591,7 @@ export default function Home() {
                   <ul className="address d-flex flex-column gap-3">
                     <li>
                       {" "}
-                      <a href="mailto:landion@example.com">
+                      <a href="mailto:ssawadogo@notarius.net">
                         <FaEnvelope className="fs-4" />
                         ssawadogo@notarius.net
                       </a>{" "}

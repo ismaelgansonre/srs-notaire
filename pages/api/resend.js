@@ -16,7 +16,7 @@ export default async function handler(req, res) {
     try {
         await resend.emails.send({
             from: "formulaire@srs-notaire.com", // Adresse email configurée dans Resend
-            to: "proismaelgans2017@gmail.com", // Adresse email où recevoir les informations
+            to: "ssawadogo@notarius.net", // Adresse email où recevoir les informations
             subject: "Nouvelle réservation de consultation",
             html: `
         <h1>Nouvelle demande de consultation</h1>
