@@ -20,6 +20,7 @@
     "react-icons": "^4.7.1",
     "react-modal-video": "^2.0.0",
     "react-visibility-sensor": "^5.1.1",
+    "resend": "^4.0.1",
     "swiper": "^8.4.7"
   },
   "devDependencies": {
