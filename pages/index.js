@@ -547,8 +547,124 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-      </footer>
-    </div>
+          <FadeIn>
+            <FadeIn>
+              <div className="row footer-content " data-wow-delay="0.3s">
+                <div className="col-md-6 col-lg-3">
+                  <img src="/img/logo1.png" alt="logo"
+                       height="100"
+                       width="165"
+                  />
+                  <p className="text-white mt-3">
+                    Membre de NotaireLocal.com, regroupement de notaires à Québec
+                    mi.{" "}
+                  </p>
+                </div>
+                <div className="col-md-6 col-lg-3">
+                  <h5 className="text-white mt-4 mt-lg-0">Company</h5>
+                  <ul className="d-flex flex-column gap-2 pt-2">
+                    <li>
+                      <a href="#home">Home</a>
+                    </li>
+                    <li>
+                      <a href="#about">About</a>
+                    </li>
+                    <li>
+                      <a href="#service">Service</a>
+                    </li>
+
+                    <li>
+                      <a href="#faq">FAQ</a>
+                    </li>
+                  </ul>
+                </div>
+
+                <div className="col-md-6 col-lg-3">
+                  <h5 className="text-white mt-5 mt-lg-0">Contact</h5>
+                  <ul className="address d-flex flex-column gap-3">
+                    <li>
+                      {" "}
+                      <a href="mailto:landion@example.com">
+                        <FaEnvelope className="fs-4" />
+                        ssawadogo@notarius.net
+                      </a>{" "}
+                    </li>
+                    <li>
+                      {" "}
+                      <a href="https://srs-notaire.com/">
+                        <FaGlobe className="fs-4" />
+                        Sarah SAWADOGO
+                      </a>{" "}
+                    </li>
+                    <li className="text-white d-flex align-content-center gap-3">
+                      <img
+                          height="30"
+                          width="30"
+                          src="/img/location.png"
+                          alt=""
+                      />
+                      <span> 1111 Bd Dr.-Frederik-Philips
+                    Saint-Laurent,Quebec H4M 2X6</span>
+                    </li>
+                    <li>
+                      <a href="tel:+15145539043">
+                        <FaMobileAlt className="fs-4" /> (514) 553-9043
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div className="row py-4 gap-4 gap-sm-0 d-flex align-items-center justify-content-center justify-content-lg-between">
+                <div className="col-sm-6 px-lg-0">
+                  <p className="mb-0 text-white">
+                    © Created by:{" "}
+                    <a
+                        href="https://www.templatemonster.com/authors/softivus/"
+                        className="text-white"
+                    >
+                      https://srs-notaire.com/
+                    </a>
+                  </p>
+                </div>
+                <div className="col-sm-6 px-lg-0">
+                  <ul className="d-flex gap-3 justify-content-sm-end social">
+                    <li>
+                      <a href="#">
+                        <FaFacebookF className="icon fs-3 fa-brands fa-facebook-f" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <FaTwitter className="icon fs-3 fa-brands fa-twitter" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <FaWhatsapp className="icon fs-3 fa-brands fa-whatsapp" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <FaInstagram className="icon fs-3 fa-brands fa-instagram" />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <FaLinkedin className="icon fs-3 fa-brands fa-linkedin-in" />
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </FadeIn>
+            </FadeIn>
+            </div>
+            </footer>
+            </div>
+
+
+
+
+
   );
 }
