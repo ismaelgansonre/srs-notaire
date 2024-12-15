@@ -32,7 +32,7 @@ import Link from "next/link";
 import FadeIn from "../components/FadeIn";
 import { services } from "../data/service";
 import ModalVideo from 'react-modal-video'
-
+import { Analytics } from '@vercel/analytics/next';
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setOpen] = useState(false)
@@ -96,6 +96,8 @@ export default function Home() {
 
   return (
     <div>
+      <Analytics />
+
       <Head>
         <title>Consultancy Landing Page</title>
         <meta name="description" content="Consultancy Landing page template" />
