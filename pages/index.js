@@ -67,32 +67,33 @@ export default function Home() {
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
+
     try {
-      const response = await fetch("/api/send-email", {
-        method: "POST",
+      const response = await fetch("/api/resend", {
+        method: "POST", // Important : la méthode doit être POST
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          fullName: formData.fullName,
+          email: formData.email,
+          phone: formData.phone,
+          date: formData.date,
+          message: formData.message,
+        }),
       });
 
       if (response.ok) {
         alert("Votre consultation a été soumise avec succès !");
-        setFormData({
-          fullName: "",
-          email: "",
-          phone: "",
-          date: "",
-          message: "",
-        });
       } else {
-        alert("Une erreur est survenue. Veuillez réessayer.");
+        alert("Erreur lors de l'envoi du formulaire. Veuillez réessayer.");
       }
     } catch (error) {
-      console.error("Erreur lors de la soumission :", error);
+      console.error("Erreur réseau :", error);
       alert("Erreur réseau, veuillez réessayer.");
     }
   };
+
   return (
     <div>
       <Head>
