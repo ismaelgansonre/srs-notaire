@@ -96,7 +96,7 @@ export default function Home() {
 
   return (
     <div>
-      <Analytics />
+
 
       <Head>
         <title>Consultancy Landing Page</title>
