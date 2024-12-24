@@ -605,7 +605,6 @@ export default function Home() {
                     <FaMobileAlt className="fs-4" /> (438) 379-6356
                 </a>
             </li>
-            <!-- Ajout du fax -->
             <li>
                 <a href="fax:+15145659802">
                     <FaFax className="fs-4" /> (514) 565-9802
