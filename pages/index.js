@@ -18,6 +18,7 @@ import {
   FaWhatsapp,
   FaInstagram,
   FaLinkedin,
+  FaFax
 } from "react-icons/fa";
 import { HiArrowNarrowRight } from "react-icons/hi";
 import { Swiper, SwiperSlide } from "swiper/react";
@@ -32,6 +33,7 @@ import Link from "next/link";
 import FadeIn from "../components/FadeIn";
 import { services } from "../data/service";
 import ModalVideo from 'react-modal-video'
+
 export default function Home() {
   const [scrolled, setScrolled] = useState(false);
   const [isOpen, setOpen] = useState(false)
