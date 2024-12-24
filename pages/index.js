@@ -605,6 +605,7 @@ export default function Home() {
                     <FaMobileAlt className="fs-4" /> (438) 379-6356
                 </a>
             </li>
+            <!-- Ajout du fax -->
             <li>
                 <a href="fax:+15145659802">
                     <FaFax className="fs-4" /> (514) 565-9802
@@ -619,7 +620,7 @@ export default function Home() {
                   <p className="mb-0 text-white">
                     © Created by:{" "}
                     <a
-                        href=""
+                        href="https://www.templatemonster.com/authors/softivus/"
                         className="text-white"
                     >
                       https://srs-notaire.com/
