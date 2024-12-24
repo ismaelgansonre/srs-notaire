@@ -177,10 +177,10 @@ export default function Home() {
                 <Link
                   onClick={hideMenu}
                   className="nav-link nav-phone text-white d-flex gap-1 align-items-center"
-                  href="tel:+15145539043"
+                  href="tel:+14383796356"
                 >
                   <FaPhoneAlt />
-                  +15145539043
+                  +14383796356
                 </Link>
               </li>
             </ul>
@@ -604,7 +604,7 @@ export default function Home() {
             </li>
             <li>
                 <a href="tel:+14383796356">
-                    <FaMobileAlt className="fs-4" /> (438) 379-6356
+                    <FaMobileAlt className="fs-4" /> (438) 379-6356 technicienne Juridique
                 </a>
             </li>
             <li>
